@@ -6,7 +6,6 @@ var app = app || {};
 
   // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
   aboutController.initAboutSection = function(){
-    console.log('inside initabout section');
     $('.tab-content').hide();
     $('#about').show();
   }
