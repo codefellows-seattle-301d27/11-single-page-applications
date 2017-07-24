@@ -11,6 +11,5 @@ var app = app || {};
     $('#about').show();
   }
 
-
   module.aboutController = aboutController;
 })(app);
