@@ -7,10 +7,7 @@ var app = app || {};
 page('/', function(){
   $('.tab-content').hide();
 })
-page('/about', function(){
-  $('.tab-content').hide();
-  $('#about').show();
-})
+page('/about', aboutController.initAboutView);
 
 // DONE: What function do you call to activate page.js? Fire it off now, to execute. Note that it does not need to be attached to the 'app' object nor wrapped in an IIFE.
 // estimate 5 min, actual 3 min
