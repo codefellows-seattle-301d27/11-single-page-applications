@@ -5,10 +5,14 @@ const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
-const PASSWORD=process.env.PASSWORD || '';
 const app = express();
-// const conString = 'postgres://USERNAME:PASSWORD@HOST:PORT';
-const conString = `postgres://postgres:${PASSWORD}@localhost:5432/kilovolt`; // DONE: Don't forget to set your own conString
+// Windows
+//const PASSWORD=process.env.PASSWORD || '';
+// const conString = `postgres://postgres:${PASSWORD}@localhost:5432/kilovolt`;
+// Mac
+const conString = `postgres://localhost:5432/kilovolt`;
+
+// DONE: Don't forget to set your own conString
 const client = new pg.Client(conString);
 client.connect();
 client.on('error', err => console.error(err));
