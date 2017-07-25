@@ -14,6 +14,5 @@ var app = app || {};
   }
   app.Article.fetchAll();
 
-
   module.articleController = articleController;
 })(app);
