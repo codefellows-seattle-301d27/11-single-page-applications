@@ -5,8 +5,11 @@ var app = app || {};
   const aboutController = {};
 
   // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
-  $('.tab-content').hide();
-  $(`#about`).fadeIn();
+  aboutController.view = function(){
+    $('.tab-content').hide();
+    $('#about').fadeIn();
+  }
 
   module.aboutController = aboutController;
+
 })(app);
