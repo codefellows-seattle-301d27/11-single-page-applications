@@ -10,5 +10,7 @@ var app = app || {};
     $('.tab-content').hide();
     $('#articles').show();
   }
+  app.Article.fetchAll();
+
   module.articleController = articleController;
 })(app);
