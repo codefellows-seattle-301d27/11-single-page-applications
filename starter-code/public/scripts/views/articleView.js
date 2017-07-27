@@ -91,6 +91,5 @@ var app = app || {};
     $('pre code').each((i, block) => hljs.highlightBlock(block));
   };
 
-  app.Article.fetchAll(articleView.initIndexPage);
   module.articleView = articleView;
 })(app);

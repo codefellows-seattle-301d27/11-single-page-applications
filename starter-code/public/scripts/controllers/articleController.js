@@ -11,8 +11,8 @@ var app = app || {};
   articleController.initArticleView = function (){
     $('.tab-content').hide();
     $('#articles').show();
+    app.Article.fetchAll(app.articleView.initIndexPage);
   }
-  app.Article.fetchAll();
 
   module.articleController = articleController;
 })(app);
