@@ -9,7 +9,7 @@ var app = app || {};
   // Estimated 10 min | Actual 20 min
   articleController.initArticleController = () => {
     module.Article.fetchAll(function(){
-      $('.tab.content').hide();
+      $('.tab-content').hide();
       $('#articles').show();
     });
   }
