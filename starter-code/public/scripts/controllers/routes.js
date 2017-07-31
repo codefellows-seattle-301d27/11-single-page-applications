@@ -5,6 +5,5 @@ var app = app || {};
 
 page('/', app.articleController.index);
 page('/about', app.aboutController.index);
-
 // TODO: What function do you call to activate page.js? Fire it off now, to execute. Note that it does not need to be attached to the 'app' object nor wrapped in an IIFE. DONE
 page();
