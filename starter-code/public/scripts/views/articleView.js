@@ -50,16 +50,7 @@ var app = app || {};
   };
 
   /* TODO: Once the routes are handling '/' and '/about', we can delete
-      this handleMainNav function. YESSSS! */
-
-  articleView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function() {
-      $('.tab-content').hide();
-      $(`#${$(this).data('content')}`).fadeIn();
-    });
-
-    $('.main-nav .tab:first').click();
-  };
+      this handleMainNav function. YESSSS!  DONE*/
 
   articleView.setTeasers = function() {
     $('.article-body *:nth-of-type(n+2)').hide();
@@ -94,7 +85,6 @@ var app = app || {};
     articleView.populateFilters();
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
-    // articleView.handleMainNav();
     articleView.setTeasers();
     $('pre code').each((i, block) => hljs.highlightBlock(block));
   };
